@@ -15,5 +15,6 @@
             <asp:Button runat="server" Text="Login" OnClick="TryLogin" />
         </div>
     </form>
+    <asp:Literal ID="LoginInfo" runat="server"/>
 </body>
 </html>

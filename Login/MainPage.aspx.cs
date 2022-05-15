@@ -18,7 +18,14 @@ namespace Login
         public void TryLogin(object sender, EventArgs e)
         {
             SigninManager signinManager = new SigninManager();
-            signinManager.login("test", PasswordInput.Text);
+            if(signinManager.login(UsernameInput.Text, PasswordInput.Text))
+            {
+                LoginInfo.Text = "Login Succesfull";
+            }
+            else
+            {
+                LoginInfo.Text = "Login Not Succesfull";
+            }
         }
 
     }
